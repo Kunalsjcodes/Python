@@ -40,7 +40,14 @@ print("\n")
 print(parrot[-4:12]) #Bl
 print(parrot[-4:-2]) #Bl
 
-letters = "abcdefghijklmnopqrstuvwxyz"
+print(parrot[0:9:2]) #Step in a Slice (start 0: End upto 9: mark with jump of 2) #Nrein
+print(parrot[:6:3]) #(start 0: End upto 6: mark with jump of 3) #Nw
 
+print("\n")
+number = "9,223;372,036 854:775;807"
+seperators = number[1::4]
+print(seperators)
 
+values = "".join(char if char not in seperators else " " for char in number).split()
+print([int(val) for val in values])
 
