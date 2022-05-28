@@ -54,4 +54,3 @@ print([int(val) for val in values])
 days = "Mon, Tue, Wed, Thu, Fri, Sat, Sun"
 print(days[::5])
 
-
