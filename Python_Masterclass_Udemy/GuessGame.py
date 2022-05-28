@@ -1,21 +1,21 @@
-answer = 5
+import random
 
-print("Please guess a number between 1 and 10: ")
-guess = int(input())
+highest = 10
+answer = random.randint(1,highest)
+guess = 0
+print("Please guess a number between 1 and {}: ".format(highest))
 
-if guess < answer:
-    print("Please guess a higher number")
+while guess != answer:
     guess = int(input())
+
+    if guess == 0:
+        break
     if guess == answer:
-        print("Well Done!")
+        print("Well Done")
+        break
     else:
-        print("OOPS! Wrong Guess")
-elif guess > answer:
-    print("Please guess a lower number")
-    guess = int(input())
-    if guess == answer:
-        print("Well Done!")
-    else:
-        print("OOPS! Wrong Guess")
-else:
-    print("Yooooo You got it right")
+        if guess < answer:
+            print("Please guess a higher number")
+        else:
+            print("Please guess a lower number")
+    
