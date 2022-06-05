@@ -13,3 +13,9 @@ print(len(odd))
 print("\n")
 print("mississipi".count("s"))
 
+print("\n")
+numbers = even + odd
+print(numbers)
+
+sorted_numbers = sorted(numbers)
+print(sorted_numbers)
