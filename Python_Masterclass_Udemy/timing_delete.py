@@ -8,7 +8,6 @@ data_list1 = list(range(max_value))
 data_list2 = list(range(max_value))
 # data_list3 = list(range(max_value))
 
-
 def sanitise_1(data):
     # process the low values in the list
     stop = 0
